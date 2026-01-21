@@ -18,7 +18,7 @@ const blogs = [
     category: "Surgery",
     date: "Jan 13, 2026",
     readTime: "4 min read",
-    image: "/assets/blog1.webp",
+    image: "/assets/Blog1.webp",
     tags: [
       "Minor Oral Surgery",
       "Dental Surgery Madurai",

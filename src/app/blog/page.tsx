@@ -13,7 +13,7 @@ const posts = [
     category: "Surgery",
     date: "Jan 13, 2026",
     readTime: "4 min read",
-    image: "/assets/blog1.webp",
+    image: "/assets/Blog1.webp",
   },
   /* {
     id: 2,
