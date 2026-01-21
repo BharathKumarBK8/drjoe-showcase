@@ -1,0 +1,174 @@
+@import "tailwindcss";
+@import "primereact/resources/themes/saga-blue/theme.css";
+@import "primereact/resources/primereact.min.css";
+@import "primeicons/primeicons.css";
+
+:root {
+  --background: black;
+  --foreground: white;
+}
+
+body {
+  background: var(--background) !important;
+  color: var(--foreground) !important;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.span {
+  color: rgb(0,148,255);
+}
+
+h1,h2 {
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -.05rem;
+}
+
+p{
+  font-size: 1.25rem;
+}
+
+
+/* ===== Scrollbar for WebKit browsers (Chrome, Safari, Edge) ===== */
+::-webkit-scrollbar {
+  width: 12px;      /* Vertical scrollbar width */
+  height: 12px;     /* Horizontal scrollbar height */
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;   /* Black track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff; /* White thumb */
+  border-radius: 6px;        /* Rounded corners */
+  border: 3px solid #000000; /* Padding around thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #cccccc; /* Slightly darker white/gray on hover */
+}
+
+/* ===== Scrollbar for Firefox ===== */
+* {
+  scrollbar-width: thin;                 /* thin / auto / none */
+  scrollbar-color: #ffffff #000000;      /* thumb color | track color */
+}
+
+.location-link {
+  font-size: 1.25rem;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.location-link:hover {
+  color: rgb(0,148,255);
+}
+
+.icon {
+  font-size: 6rem;
+  margin: 1rem;
+}
+
+.timingsP{
+  font-size: 1.125rem;
+  padding: 1.5rem;
+}
+
+.autoTestimonials-container{
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.auto-testimonials{
+  font-style: italic;
+}
+
+@media (min-width: 320px) and (max-width:419px){
+h1,h2{
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+  }
+
+  p{
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .icon{
+    font-size: 3rem;
+  }
+  .location-link{
+    font-size: 1rem;
+  }
+  .timingsP{
+    font-size: 1rem;
+    padding: .5rem;
+  }
+  .auto-testimonials{
+    font-size: .8rem;
+  }
+}
+
+/* Responsive */
+@media (min-width:420px) and  (max-width: 768px) {
+  h1,h2{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  p{
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .icon{
+    font-size: 3rem;
+  }
+  
+  .location-link{
+    font-size: 1rem;
+  }
+
+  .timingsP{
+    font-size: 1rem;
+    padding: .75rem;
+  }
+  .auto-testimonials{
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1,h2{
+    font-size: 3.5rem;
+  }  
+  p{
+    font-size: 1.25rem;
+  }
+}
