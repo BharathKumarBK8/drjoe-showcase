@@ -36,7 +36,7 @@ const services = [
     title: "Root Canal Treatment",
     image: "/assets/services/root-canal.png",
     description:
-      "Root canal treatment saves infected or damaged teeth, relieving pain and preventing further complications. With advanced tools and modern anesthesia, we ensure a comfortable and effective procedure",
+      "Root canal treatment saves infected or damaged teeth, relieving pain and preventing further complications. With advanced tools and modern anesthesia, we ensure a comfortable and effective procedure.",
   },
   {
     id: "smile-makeovers",
@@ -50,7 +50,7 @@ const services = [
     title: "Teeth Whitening",
     image: "/assets/services/TeethWhitening.jpg",
     description:
-      "Professional teeth whitening removes stains and discoloration to brighten your smile in a single visit. We use safe, enamel-friendly techniques for long-lasting, radiant results",
+      "Professional teeth whitening removes stains and discoloration to brighten your smile in a single visit. We use safe, enamel-friendly techniques for long-lasting, radiant results.",
   },
   {
     id: "dental-veneers",

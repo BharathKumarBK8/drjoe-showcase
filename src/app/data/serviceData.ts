@@ -154,7 +154,7 @@ export const serviceData: Record<string, any> = {
   "root-canal": {
     title: "Root Canal Treatment",
     location: "Madurai",
-    heroImage: "/assets/services/root-canal.jpg",
+    heroImage: "/assets/services/root-canal.png",
     shortDescription:
       "Save your natural tooth and relieve pain with modern root canal treatment. Our expert team ensures a fast, comfortable, and effective procedure.",
     reassurancePoints: [
@@ -305,7 +305,7 @@ export const serviceData: Record<string, any> = {
   "dental-veneers": {
     title: "Dental Veneers",
     location: "Madurai",
-    heroImage: "/assets/services/veneers.jpg",
+    heroImage: "/assets/services/veneers.webp",
     shortDescription:
       "Custom dental veneers are thin porcelain shells bonded to the front of your teeth. They correct chips, gaps, and discoloration, creating a flawless, natural-looking smile with minimal discomfort.",
     reassurancePoints: [
@@ -458,7 +458,7 @@ export const serviceData: Record<string, any> = {
   "dental-fillings": {
     title: "Dental Fillings",
     location: "Madurai",
-    heroImage: "/assets/services/fillings.jpg",
+    heroImage: "/assets/services/dental-fillings.jpg",
     shortDescription:
       "Repair cavities and restore tooth strength with durable dental fillings. Modern techniques ensure natural-looking results and long-lasting protection.",
     reassurancePoints: [
