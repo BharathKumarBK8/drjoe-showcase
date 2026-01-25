@@ -2,7 +2,6 @@ export interface Services {
   id: number;
   title: string;
   slug: string;
-  location: string;
   description: string;
   excerpt: string;
   image: string;
@@ -19,7 +18,6 @@ export const services: Services[] = [
     id: 1,
     title: "Invisible Aligners",
     slug: "invisible-aligners",
-    location: "Madurai",
     image: "/assets/services/Aligners.jpeg",
     description:
       "Our invisible aligners offer a discreet, comfortable way to straighten teeth without metal braces. Using advanced 3D scans and custom treatment plans, these clear trays gradually correct gaps, crowding, and bite issues while remaining nearly invisible.",
@@ -73,7 +71,6 @@ export const services: Services[] = [
     id: 2,
     title: "Routine Dental Checkups",
     slug: "routine-dental-checkups",
-    location: "Madurai",
     image: "/assets/services/Checkups.jpg",
     description:
       "Regular dental checkups are essential for maintaining long-term oral health. Each visit includes professional cleaning, early detection of dental issues, and personalized advice to keep your smile healthy and strong.",
@@ -123,7 +120,6 @@ export const services: Services[] = [
     id: 3,
     title: "Dental Implants",
     slug: "dental-implants",
-    location: "Madurai",
     image: "/assets/services/Implants.jpg",
     description:
       "Dental implants are a permanent solution for missing teeth, restoring both function and aesthetics. We use titanium implants and precise placement techniques to ensure natural-looking results that last for years.",
@@ -180,7 +176,6 @@ export const services: Services[] = [
     id: 4,
     slug: "root-canal-treatment",
     title: "Root Canal Treatment",
-    location: "Madurai",
     image: "/assets/services/root-canal.png",
     description:
       "Root canal treatment saves infected or damaged teeth, relieving pain and preventing further complications. With advanced tools and modern anesthesia, we ensure a comfortable and effective procedure.",
@@ -234,7 +229,6 @@ export const services: Services[] = [
     id: 5,
     title: "Smile Makeovers",
     slug: "smile-makeovers",
-    location: "Madurai",
     image: "/assets/services/smile-makeover.jpg",
     description:
       "A smile makeover combines treatments like veneers, whitening, crowns, and orthodontics to enhance your teeth’s appearance. Each plan is personalized to create a natural, balanced, and confident smile.",
@@ -290,7 +284,6 @@ export const services: Services[] = [
     id: 6,
     title: "Teeth Whitening",
     slug: "teeth-whitening",
-    location: "Madurai",
     image: "/assets/services/TeethWhitening.jpg",
     description:
       "Professional teeth whitening removes stains and discoloration to brighten your smile in a single visit. We use safe, enamel-friendly techniques for long-lasting, radiant results.",
@@ -340,7 +333,6 @@ export const services: Services[] = [
     id: 7,
     title: "Dental Veneers",
     slug: "dental-veneers",
-    location: "Madurai",
     image: "/assets/services/veneers.webp",
     description:
       "Custom dental veneers are thin porcelain shells bonded to the front of your teeth to correct chips, gaps, or discoloration. They create a flawless, natural-looking smile with minimal discomfort and long-lasting results.",
@@ -394,7 +386,6 @@ export const services: Services[] = [
     id: 8,
     title: "Complete Dentures",
     slug: "complete-dentures",
-    location: "Madurai",
     image: "/assets/services/Dentures.jpg",
     description:
       "Complete dentures replace all missing teeth, restoring chewing ability, speech, and facial structure. We craft comfortable, durable dentures that look natural and help you regain confidence.",
@@ -448,7 +439,6 @@ export const services: Services[] = [
     id: 9,
     title: "Metal Braces",
     slug: "metal-braces",
-    location: "Madurai",
     image: "/assets/services/metal-braces.jpg",
     description:
       "Traditional metal braces are a reliable way to correct misaligned teeth, spacing, and bite issues. Each treatment plan is customized to deliver effective, long-lasting results for all ages.",
@@ -502,7 +492,6 @@ export const services: Services[] = [
     id: 10,
     title: "Dental Fillings",
     slug: "dental-fillings",
-    location: "Madurai",
     image: "/assets/services/dental-fillings.jpg",
     description:
       "Dental fillings repair cavities and restore tooth strength using durable, tooth-colored materials. Our minimally invasive approach ensures long-lasting protection while keeping your smile natural and healthy.",

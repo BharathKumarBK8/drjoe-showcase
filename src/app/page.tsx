@@ -9,6 +9,7 @@ import ParallaxGallery from "@/app/components/ParallaxGallery/ParallaxGallery";
 import styles from "@/app/components/Section.module.css";
 import Section from "@/app/components/Section";
 import Link from "next/link";
+import { services } from "./data/services";
 
 export default function LandingPage() {
   const clinics = [
@@ -28,19 +29,6 @@ export default function LandingPage() {
       text: "Transparent treatment plans before procedures",
     },
     { icon: "bi bi-star-fill", text: "Best dental clinics in Madurai" },
-  ];
-
-  const servicesList = [
-    { name: "Invisible Aligners", id: "invisible-aligners" },
-    { name: "Routine Dental Checkups", id: "routine-checkups" },
-    { name: "Dental Implants", id: "dental-implants" },
-    { name: "Root Canal Treatment", id: "root-canal" },
-    { name: "Smile Makeovers", id: "smile-makeovers" },
-    { name: "Teeth Whitening", id: "teeth-whitening" },
-    { name: "Dental Veneers", id: "dental-veneers" },
-    { name: "Complete Dentures", id: "complete-dentures" },
-    { name: "Metal Braces", id: "metal-braces" },
-    { name: "Dental Fillings", id: "dental-fillings" },
   ];
 
   return (
@@ -141,15 +129,14 @@ export default function LandingPage() {
             viewport={{ once: false, amount: 0.2 }}
             className={styles.gridTwoColsRight}
           >
-            {servicesList.map((service) => (
+            {services.map((service) => (
               <motion.div
-                key={service.id}
                 variants={item}
                 className={styles.whiteCard}
                 whileHover={{ scale: "1.05" }}
               >
                 <Link
-                  href={`/services/${service.id}`}
+                  href={`/services/${service.slug}`}
                   className={styles.serviceLink}
                   scroll
                   style={{
@@ -158,7 +145,7 @@ export default function LandingPage() {
                     height: "100%",
                   }}
                 >
-                  🦷 {service.name}
+                  🦷 {service.title}
                 </Link>
               </motion.div>
             ))}
