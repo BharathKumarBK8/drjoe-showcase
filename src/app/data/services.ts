@@ -1,9 +1,26 @@
-export const serviceData: Record<string, any> = {
-  "invisible-aligners": {
+export interface Services {
+  id: number;
+  title: string;
+  slug: string;
+  location: string;
+  excerpt: string;
+  image: string;
+  reassurancePoints: string[];
+  whatIsIt: string[];
+  benefits: string[];
+  idealFor: string[];
+  procedure: string[];
+  faqs: { question: string; answer: string }[];
+}
+
+export const services: Services[] = [
+  {
+    id: 1,
     title: "Invisible Aligners",
+    slug: "invisible-aligners",
     location: "Madurai",
-    heroImage: "/assets/services/Aligners.jpeg",
-    shortDescription:
+    image: "/assets/services/Aligners.jpeg",
+    excerpt:
       "Straighten your teeth discreetly with invisible aligners. Custom, removable trays gently realign your smile without metal braces, perfect for teens and adults who want comfort and confidence.",
     reassurancePoints: [
       "Nearly invisible & comfortable",
@@ -49,12 +66,13 @@ export const serviceData: Record<string, any> = {
       },
     ],
   },
-
-  "routine-checkups": {
+  {
+    id: 2,
     title: "Routine Dental Checkups",
+    slug: "routine-dental-checkups",
     location: "Madurai",
-    heroImage: "/assets/services/Checkups.jpg",
-    shortDescription:
+    image: "/assets/services/Checkups.jpg",
+    excerpt:
       "Maintain a healthy, confident smile with routine dental checkups. Our preventive care catches issues early and keeps your teeth and gums in top condition.",
     reassurancePoints: [
       "Gentle, pain-free checkups",
@@ -96,12 +114,13 @@ export const serviceData: Record<string, any> = {
       },
     ],
   },
-
-  "dental-implants": {
+  {
+    id: 3,
     title: "Dental Implants",
+    slug: "dental-implants",
     location: "Madurai",
-    heroImage: "/assets/services/Implants.jpg",
-    shortDescription:
+    image: "/assets/services/Implants.jpg",
+    excerpt:
       "Dental implants are a permanent solution for missing teeth, restoring both function and aesthetics. Our expert team ensures natural-looking results with precise placement techniques, helping you smile, eat, and speak confidently.",
     reassurancePoints: [
       "Painless modern implant techniques",
@@ -150,12 +169,13 @@ export const serviceData: Record<string, any> = {
       },
     ],
   },
-
-  "root-canal": {
+  {
+    id: 4,
+    slug: "root-canal-treatment",
     title: "Root Canal Treatment",
     location: "Madurai",
-    heroImage: "/assets/services/root-canal.png",
-    shortDescription:
+    image: "/assets/services/root-canal.png",
+    excerpt:
       "Save your natural tooth and relieve pain with modern root canal treatment. Our expert team ensures a fast, comfortable, and effective procedure.",
     reassurancePoints: [
       "Pain-free modern techniques",
@@ -201,12 +221,13 @@ export const serviceData: Record<string, any> = {
       },
     ],
   },
-
-  "smile-makeovers": {
+  {
+    id: 5,
     title: "Smile Makeovers",
+    slug: "smile-makeover",
     location: "Madurai",
-    heroImage: "/assets/services/smile-makeover.jpg",
-    shortDescription:
+    image: "/assets/services/smile-makeover.jpg",
+    excerpt:
       "Transform your smile with a personalized smile makeover. Combining veneers, whitening, crowns, and orthodontics, we create a natural, radiant smile tailored to you.",
     reassurancePoints: [
       "Customized digital smile design",
@@ -254,12 +275,13 @@ export const serviceData: Record<string, any> = {
       },
     ],
   },
-
-  "teeth-whitening": {
+  {
+    id: 6,
     title: "Teeth Whitening",
+    slug: "teeth-whitening",
     location: "Madurai",
-    heroImage: "/assets/services/TeethWhitening.jpg",
-    shortDescription:
+    image: "/assets/services/TeethWhitening.jpg",
+    excerpt:
       "Brighten your smile safely and effectively with professional teeth whitening. Remove stains from coffee, tea, tobacco, or aging teeth in one visit.",
     reassurancePoints: [
       "Safe, enamel-friendly formulas",
@@ -301,12 +323,13 @@ export const serviceData: Record<string, any> = {
       },
     ],
   },
-
-  "dental-veneers": {
+  {
+    id: 7,
     title: "Dental Veneers",
+    slug: "dental-veneers",
     location: "Madurai",
-    heroImage: "/assets/services/veneers.webp",
-    shortDescription:
+    image: "/assets/services/veneers.webp",
+    excerpt:
       "Custom dental veneers are thin porcelain shells bonded to the front of your teeth. They correct chips, gaps, and discoloration, creating a flawless, natural-looking smile with minimal discomfort.",
     reassurancePoints: [
       "Natural tooth-like appearance",
@@ -352,12 +375,13 @@ export const serviceData: Record<string, any> = {
       },
     ],
   },
-
-  "complete-dentures": {
+  {
+    id: 8,
     title: "Complete Dentures",
+    slug: "complete-dentures",
     location: "Madurai",
-    heroImage: "/assets/services/Dentures.jpg",
-    shortDescription:
+    image: "/assets/services/Dentures.jpg",
+    excerpt:
       "Restore missing teeth with comfortable, durable complete dentures. Regain chewing ability, speech clarity, and facial aesthetics while boosting confidence.",
     reassurancePoints: [
       "Custom-fit comfort",
@@ -403,12 +427,13 @@ export const serviceData: Record<string, any> = {
       },
     ],
   },
-
-  "metal-braces": {
+  {
+    id: 9,
     title: "Metal Braces",
+    slug: "metal-braces",
     location: "Madurai",
-    heroImage: "/assets/services/metal-braces.jpg",
-    shortDescription:
+    image: "/assets/services/metal-braces.jpg",
+    excerpt:
       "Traditional metal braces effectively correct misaligned teeth, spacing, and bite issues. Custom treatment plans ensure comfortable, long-lasting results for patients of all ages.",
     reassurancePoints: [
       "Proven orthodontic method",
@@ -454,12 +479,13 @@ export const serviceData: Record<string, any> = {
       },
     ],
   },
-
-  "dental-fillings": {
+  {
+    id: 10,
     title: "Dental Fillings",
+    slug: "dental-fillings",
     location: "Madurai",
-    heroImage: "/assets/services/dental-fillings.jpg",
-    shortDescription:
+    image: "/assets/services/dental-fillings.jpg",
+    excerpt:
       "Repair cavities and restore tooth strength with durable dental fillings. Modern techniques ensure natural-looking results and long-lasting protection.",
     reassurancePoints: [
       "Painless procedure",
@@ -501,4 +527,4 @@ export const serviceData: Record<string, any> = {
       },
     ],
   },
-};
+];

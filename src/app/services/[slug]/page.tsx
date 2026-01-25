@@ -1,7 +1,9 @@
 import Section from "@/app/components/Section";
 import ServiceContent from "./ServiceContent";
-import { serviceData } from "@/app/data/serviceData";
+import { services } from "@/app/data/services";
 import { Metadata } from "next";
+import { findService } from "@/app/utils/seo/fetchers";
+import { serviceMetadata } from "@/app/utils/seo/metadataFactories";
 
 interface ServicePageProps {
   params: { slug: string };
@@ -14,7 +16,7 @@ export async function generateMetadata({
   params,
 }: ServicePageProps): Promise<Metadata> {
   const { slug } = await params;
-  const service = serviceData[slug];
+  const service = findService(slug);
 
   if (!service) {
     return {
@@ -23,46 +25,16 @@ export async function generateMetadata({
     };
   }
 
-  return {
-    title: `${service.title} | Dr. Joe's Dental Hospital`,
-    description:
-      service.excerpt ||
-      "Learn more about our dental services at Dr. Joe's Hospital.",
-    openGraph: {
-      title: `${service.title} | Dr. Joe's Dental Hospital`,
-      description:
-        service.excerpt ||
-        "Learn more about our dental services at Dr. Joe's Hospital.",
-      url: `https://www.drjoedental.com/services/${slug}`,
-      siteName: "Dr. Joe's Dental Hospital",
-      images: service.image
-        ? [
-            {
-              url: service.image,
-              width: 1200,
-              height: 630,
-              alt: service.title,
-            },
-          ]
-        : [],
-      type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: `${service.title} | Dr. Joe's Dental Hospital`,
-      description:
-        service.excerpt ||
-        "Learn more about our dental services at Dr. Joe's Hospital.",
-      images: service.image ? [service.image] : [],
-    },
-  };
+  return serviceMetadata(slug, "services");
 }
 
 /* ------------------------------------------------------------------ */
 /* Static Params                                                      */
 /* ------------------------------------------------------------------ */
 export async function generateStaticParams() {
-  return Object.keys(serviceData).map((slug) => ({ slug }));
+  return services.map((service) => ({
+    slug: service.slug,
+  }));
 }
 
 /* ------------------------------------------------------------------ */
@@ -70,7 +42,7 @@ export async function generateStaticParams() {
 /* ------------------------------------------------------------------ */
 export default async function ServicePage({ params }: ServicePageProps) {
   const { slug } = await params;
-  const service = serviceData[slug];
+  const service = findService(slug);
 
   if (!service) {
     return (

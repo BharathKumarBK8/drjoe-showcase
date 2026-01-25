@@ -48,7 +48,7 @@ export default function ServiceContent({ service }: any) {
 
           {/* Image */}
           <motion.img
-            src={service.heroImage}
+            src={service.image}
             alt={service.title}
             variants={fadeUp}
             loading="lazy"

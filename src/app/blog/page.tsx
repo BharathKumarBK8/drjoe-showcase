@@ -3,41 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import styles from "./BlogPage.module.css";
-
-const posts = [
-  {
-    id: 1,
-    slug: "minor-surgical-procedures",
-    title: "Minor Surgical Procedures in Dentistry",
-    excerpt: "Minor dental surgeries for teeth, gums, and soft tissue care.",
-    category: "Surgery",
-    date: "Jan 13, 2026",
-    readTime: "4 min read",
-    image: "/assets/Blog1.webp",
-  },
-  /* {
-    id: 2,
-    slug: "children-dental-care-tips",
-    title: "Top 5 Tips for Children’s Dental Care",
-    excerpt:
-      "Good oral habits start early. Learn how to protect your child’s smile from day one.",
-    category: "Kids",
-    date: "Mar 8, 2025",
-    readTime: "5 min read",
-    image: "/assets/img1.jpg",
-  },
-  {
-    id: 3,
-    slug: "teeth-whitening-guide",
-    title: "Teeth Whitening: What You Should Know",
-    excerpt:
-      "Thinking about whitening your teeth? Here’s what’s safe, effective, and recommended.",
-    category: "Cosmetic",
-    date: "Mar 3, 2025",
-    readTime: "3 min read",
-    image: "/assets/img4.jpg",
-  }, */
-];
+import { blogs } from "../data/blogs";
 
 export default function BlogPage() {
   return (
@@ -70,17 +36,17 @@ export default function BlogPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <Link href={`/blog/${posts[0].slug}`}>
-            <img src={posts[0].image} alt={posts[0].title} loading="lazy" />
+          <Link href={`/blog/${blogs[0].slug}`}>
+            <img src={blogs[0].image} alt={blogs[0].title} loading="lazy" />
           </Link>
           <div className={styles.featuredContent}>
-            <span className={styles.tag}>{posts[0].category}</span>
+            <span className={styles.tag}>{blogs[0].category}</span>
             <h2>
-              <Link href={`/blog/${posts[0].slug}`}>{posts[0].title}</Link>
+              <Link href={`/blog/${blogs[0].slug}`}>{blogs[0].title}</Link>
             </h2>
-            <p>{posts[0].excerpt}</p>
+            <p>{blogs[0].excerpt}</p>
             <div className={styles.meta}>
-              {posts[0].date} · {posts[0].readTime}
+              {blogs[0].date} · {blogs[0].readTime}
             </div>
           </div>
         </motion.article>
@@ -88,9 +54,9 @@ export default function BlogPage() {
 
       {/* Blog Grid */}
       <section className={styles.grid}>
-        {posts.slice(1).map((post, i) => (
+        {blogs.slice(1).map((blog, i) => (
           <motion.article
-            key={post.id}
+            key={blog.id}
             className={styles.card}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -98,17 +64,17 @@ export default function BlogPage() {
             transition={{ delay: i * 0.1 }}
             whileHover={{ y: -6 }}
           >
-            <Link href={`/blog/${post.slug}`}>
-              <img src={post.image} alt={post.title} loading="lazy" />
+            <Link href={`/blog/${blog.slug}`}>
+              <img src={blog.image} alt={blog.title} loading="lazy" />
             </Link>
             <div className={styles.cardContent}>
-              <span className={styles.tag}>{post.category}</span>
+              <span className={styles.tag}>{blog.category}</span>
               <h3>
-                <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+                <Link href={`/blog/${blog.slug}`}>{blog.title}</Link>
               </h3>
-              <p>{post.excerpt}</p>
+              <p>{blog.excerpt}</p>
               <div className={styles.meta}>
-                {post.date} · {post.readTime}
+                {blog.date} · {blog.readTime}
               </div>
             </div>
           </motion.article>

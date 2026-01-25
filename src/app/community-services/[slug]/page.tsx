@@ -1,16 +1,42 @@
 // src/app/community-services/[slug]/page.tsx
 import { communityServicesData } from "@/app/data/communityServices";
 import CommunityServicesContent from "./CommunityServiceContent";
+import { Metadata } from "next";
+import { findCommunityService } from "@/app/utils/seo/fetchers";
+import { serviceMetadata } from "@/app/utils/seo/metadataFactories";
 
 interface PageProps {
-  params: {
-    slug: string;
-  };
+  params: { slug: string };
+}
+
+/* ------------------------------------------------------------------ */
+/* Metadata                                                           */
+/* ------------------------------------------------------------------ */
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const service = findCommunityService(slug);
+
+  if (!service) {
+    return {};
+  }
+
+  return serviceMetadata(slug, "community-services");
+}
+
+/* ------------------------------------------------------------------ */
+/* Static Params                                                      */
+/* ------------------------------------------------------------------ */
+export async function generateStaticParams() {
+  return communityServicesData.map((service) => ({
+    slug: service.slug,
+  }));
 }
 
 export default async function CommunityServicePage({ params }: PageProps) {
   const { slug } = await params;
-  const service = communityServicesData.find((s) => s.slug === slug);
+  const service = findCommunityService(slug);
 
   if (!service) {
     return (
