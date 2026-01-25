@@ -3,6 +3,7 @@ export interface Services {
   title: string;
   slug: string;
   location: string;
+  description: string;
   excerpt: string;
   image: string;
   reassurancePoints: string[];
@@ -20,6 +21,8 @@ export const services: Services[] = [
     slug: "invisible-aligners",
     location: "Madurai",
     image: "/assets/services/Aligners.jpeg",
+    description:
+      "Our invisible aligners offer a discreet, comfortable way to straighten teeth without metal braces. Using advanced 3D scans and custom treatment plans, these clear trays gradually correct gaps, crowding, and bite issues while remaining nearly invisible.",
     excerpt:
       "Straighten your teeth discreetly with invisible aligners. Custom, removable trays gently realign your smile without metal braces, perfect for teens and adults who want comfort and confidence.",
     reassurancePoints: [
@@ -72,6 +75,8 @@ export const services: Services[] = [
     slug: "routine-dental-checkups",
     location: "Madurai",
     image: "/assets/services/Checkups.jpg",
+    description:
+      "Regular dental checkups are essential for maintaining long-term oral health. Each visit includes professional cleaning, early detection of dental issues, and personalized advice to keep your smile healthy and strong.",
     excerpt:
       "Maintain a healthy, confident smile with routine dental checkups. Our preventive care catches issues early and keeps your teeth and gums in top condition.",
     reassurancePoints: [
@@ -120,6 +125,8 @@ export const services: Services[] = [
     slug: "dental-implants",
     location: "Madurai",
     image: "/assets/services/Implants.jpg",
+    description:
+      "Dental implants are a permanent solution for missing teeth, restoring both function and aesthetics. We use titanium implants and precise placement techniques to ensure natural-looking results that last for years.",
     excerpt:
       "Dental implants are a permanent solution for missing teeth, restoring both function and aesthetics. Our expert team ensures natural-looking results with precise placement techniques, helping you smile, eat, and speak confidently.",
     reassurancePoints: [
@@ -175,6 +182,8 @@ export const services: Services[] = [
     title: "Root Canal Treatment",
     location: "Madurai",
     image: "/assets/services/root-canal.png",
+    description:
+      "Root canal treatment saves infected or damaged teeth, relieving pain and preventing further complications. With advanced tools and modern anesthesia, we ensure a comfortable and effective procedure.",
     excerpt:
       "Save your natural tooth and relieve pain with modern root canal treatment. Our expert team ensures a fast, comfortable, and effective procedure.",
     reassurancePoints: [
@@ -224,9 +233,11 @@ export const services: Services[] = [
   {
     id: 5,
     title: "Smile Makeovers",
-    slug: "smile-makeover",
+    slug: "smile-makeovers",
     location: "Madurai",
     image: "/assets/services/smile-makeover.jpg",
+    description:
+      "A smile makeover combines treatments like veneers, whitening, crowns, and orthodontics to enhance your teeth’s appearance. Each plan is personalized to create a natural, balanced, and confident smile.",
     excerpt:
       "Transform your smile with a personalized smile makeover. Combining veneers, whitening, crowns, and orthodontics, we create a natural, radiant smile tailored to you.",
     reassurancePoints: [
@@ -281,6 +292,8 @@ export const services: Services[] = [
     slug: "teeth-whitening",
     location: "Madurai",
     image: "/assets/services/TeethWhitening.jpg",
+    description:
+      "Professional teeth whitening removes stains and discoloration to brighten your smile in a single visit. We use safe, enamel-friendly techniques for long-lasting, radiant results.",
     excerpt:
       "Brighten your smile safely and effectively with professional teeth whitening. Remove stains from coffee, tea, tobacco, or aging teeth in one visit.",
     reassurancePoints: [
@@ -329,6 +342,8 @@ export const services: Services[] = [
     slug: "dental-veneers",
     location: "Madurai",
     image: "/assets/services/veneers.webp",
+    description:
+      "Custom dental veneers are thin porcelain shells bonded to the front of your teeth to correct chips, gaps, or discoloration. They create a flawless, natural-looking smile with minimal discomfort and long-lasting results.",
     excerpt:
       "Custom dental veneers are thin porcelain shells bonded to the front of your teeth. They correct chips, gaps, and discoloration, creating a flawless, natural-looking smile with minimal discomfort.",
     reassurancePoints: [
@@ -381,6 +396,8 @@ export const services: Services[] = [
     slug: "complete-dentures",
     location: "Madurai",
     image: "/assets/services/Dentures.jpg",
+    description:
+      "Complete dentures replace all missing teeth, restoring chewing ability, speech, and facial structure. We craft comfortable, durable dentures that look natural and help you regain confidence.",
     excerpt:
       "Restore missing teeth with comfortable, durable complete dentures. Regain chewing ability, speech clarity, and facial aesthetics while boosting confidence.",
     reassurancePoints: [
@@ -433,6 +450,8 @@ export const services: Services[] = [
     slug: "metal-braces",
     location: "Madurai",
     image: "/assets/services/metal-braces.jpg",
+    description:
+      "Traditional metal braces are a reliable way to correct misaligned teeth, spacing, and bite issues. Each treatment plan is customized to deliver effective, long-lasting results for all ages.",
     excerpt:
       "Traditional metal braces effectively correct misaligned teeth, spacing, and bite issues. Custom treatment plans ensure comfortable, long-lasting results for patients of all ages.",
     reassurancePoints: [
@@ -485,6 +504,8 @@ export const services: Services[] = [
     slug: "dental-fillings",
     location: "Madurai",
     image: "/assets/services/dental-fillings.jpg",
+    description:
+      "Dental fillings repair cavities and restore tooth strength using durable, tooth-colored materials. Our minimally invasive approach ensures long-lasting protection while keeping your smile natural and healthy.",
     excerpt:
       "Repair cavities and restore tooth strength with durable dental fillings. Modern techniques ensure natural-looking results and long-lasting protection.",
     reassurancePoints: [

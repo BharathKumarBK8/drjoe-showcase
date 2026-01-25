@@ -42,7 +42,7 @@ export default function ServiceContent({ service }: any) {
               {service.title}
             </h1>
             <p className="text-lg text-white leading-relaxed">
-              {service.shortDescription}
+              {service.excerpt}
             </p>
           </motion.div>
 
