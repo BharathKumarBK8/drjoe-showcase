@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 const SITE_NAME = "Dr. Joe's Dental Hospital";
-const SITE_URL = "https://www.drjoesdental.com";
+export const SITE_URL = "https://www.drjoesdental.com";
 const DEFAULT_DESCRIPTION =
   "Learn more about our dental services and community programs at Dr. Joe's Dental Hospital.";
 

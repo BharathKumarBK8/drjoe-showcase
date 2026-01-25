@@ -10,7 +10,7 @@ export async function blogMetadata(slug: string) {
   if (!blog) {
     return buildSeo({
       title: "Blog Not Found",
-      path: `/blogs/${slug}`,
+      path: `/blog/${slug}`,
       noIndex: true,
     });
   }
@@ -18,7 +18,7 @@ export async function blogMetadata(slug: string) {
   return buildSeo({
     title: blog.title,
     description: blog.excerpt,
-    path: `/blogs/${slug}`,
+    path: `/blog/${slug}`,
     image: blog.image,
     type: "article",
   });
