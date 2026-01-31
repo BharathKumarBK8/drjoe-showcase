@@ -20,14 +20,25 @@ export const metadata: Metadata = {
   description:
     "dr.joe's Dental Clinic: Caring for your smile with gentle, expert dentistry.",
   icons: {
-    icon: [
+    // Canonical icons for Google SERP and App Router
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
+
+    // Legacy icons for browsers / Android / iOS
+    shortcut: [
       { url: "/assets/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/assets/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/assets/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
-      { url: "/assets/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
+      {
+        url: "/assets/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        url: "/assets/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
     ],
-    shortcut: "/assets/favicon.ico",
-    apple: "/assets/apple-touch-icon.png",
   },
 };
 
