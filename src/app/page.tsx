@@ -131,6 +131,7 @@ export default function LandingPage() {
           >
             {services.map((service) => (
               <motion.div
+                key={service.title}
                 variants={item}
                 className={styles.whiteCard}
                 whileHover={{ scale: "1.05" }}

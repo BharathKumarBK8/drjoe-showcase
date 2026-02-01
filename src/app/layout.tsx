@@ -16,9 +16,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "dr.joe's - Smile Brighter, Live Better",
+  title:
+    "Dr. Joe’s Dental Clinic in Madurai | Transforming Lives, One at a Time",
   description:
-    "dr.joe's Dental Clinic: Caring for your smile with gentle, expert dentistry.",
+    "Dr. Joe’s Dental Clinic in Madurai offers gentle, expert dental care, transforming lives one at a time. Pain-free treatments across Appanthirupathi & Pasingapuram.",
   icons: {
     // Canonical icons for Google SERP and App Router
     icon: "/favicon.ico",
