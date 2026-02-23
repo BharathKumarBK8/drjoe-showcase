@@ -4,8 +4,10 @@
 @import "primeicons/primeicons.css";
 
 :root {
-  --background: black;
-  --foreground: white;
+  --background: #000;
+  --foreground: #fff;
+  --accent:  rgb(0,148,255);          
+  --accent-hover: rgb(0,120,220);     
 }
 
 body {

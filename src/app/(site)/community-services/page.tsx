@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import styles from "./CommunityServicesPage.module.css";
-import { communityServicesData } from "../data/communityServices";
+import { communityServicesData } from "../../data/communityServices";
 
 export default function CommunityServicesPage() {
   return (

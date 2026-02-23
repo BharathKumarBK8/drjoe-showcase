@@ -2,14 +2,14 @@
 
 import { motion } from "framer-motion";
 import { fadeUp, container, item } from "@/app/hooks/animation";
-import { openWhatsApp } from "./utils/whatsapp";
+import { openWhatsApp } from "../utils/whatsapp";
 import AutoPaginatedTestimonials from "@/app/components/AutoPaginatedTestimonials";
 import NumberReveal from "@/app/components/NumberReveal/NumberReveal";
 import ParallaxGallery from "@/app/components/ParallaxGallery/ParallaxGallery";
 import styles from "@/app/components/Section.module.css";
 import Section from "@/app/components/Section";
 import Link from "next/link";
-import { services } from "./data/services";
+import { services } from "../data/services";
 
 export default function LandingPage() {
   const clinics = [
